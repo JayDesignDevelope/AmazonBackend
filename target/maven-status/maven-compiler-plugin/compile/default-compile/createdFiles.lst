@@ -1,0 +1,6 @@
+com/example/usermetadata/Repository/UsersRepo.class
+com/example/usermetadata/Services/UserService.class
+com/example/usermetadata/UserApplication.class
+com/example/usermetadata/Entity/UserMetaData.class
+com/example/usermetadata/Repository/UserRepo.class
+com/example/usermetadata/Controller/UserController.class
