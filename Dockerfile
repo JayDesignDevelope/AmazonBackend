@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM eclipse-temurin:17-jdk-alpine
 LABEL authors="jay"
 VOLUME /tmp
 COPY target/*.jar app.jar
