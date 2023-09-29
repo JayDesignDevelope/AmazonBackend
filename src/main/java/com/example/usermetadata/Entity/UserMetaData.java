@@ -4,12 +4,16 @@ package com.example.usermetadata.Entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Table;
 
-@Entity(name="User")
+
+@Entity(name="amazon-app-user")
 public class UserMetaData {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private long id;
 
     private String name;
