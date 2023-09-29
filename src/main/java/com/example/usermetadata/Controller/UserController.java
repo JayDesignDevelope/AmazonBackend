@@ -9,6 +9,10 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/amazon/users")
 @RestController
 public class UserController {
+    @GetMapping
+    public String welcomeMessage() {
+        return "Welcome to usermetadata backend API";
+    }
 
     @Autowired
     UserService userService;
@@ -23,7 +27,6 @@ public class UserController {
     public UserMetaData getUserDetails(@PathVariable String userId){
         UserMetaData user=userService.getsUserDetailsFromDB(userId);
         return user;
-
     }
 
 
